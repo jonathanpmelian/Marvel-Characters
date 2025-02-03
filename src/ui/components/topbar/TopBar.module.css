@@ -1,0 +1,25 @@
+.container {
+  background-color: #000000;
+  height: 84px;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fav-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.fav-container__counter {
+  color: #ffffff;
+}
+
+@media (min-width: 393px) {
+  .container {
+    padding: 16px 48px;
+  }
+}
