@@ -9,13 +9,15 @@ export const TopBar = () => {
   return (
     <div className={style.container}>
       <div className={style.container__content}>
-        <Image
-          src="/marvel.svg"
-          alt="marvel logo"
-          width={130}
-          height={52}
-          priority
-        />
+        <Link href={"/"} aria-label="go to home page">
+          <Image
+            src="/marvel.svg"
+            alt="marvel logo"
+            width={130}
+            height={52}
+            priority
+          />
+        </Link>
 
         <div className={style["fav-container"]}>
           <Link href="/" aria-label="link to favorite page">

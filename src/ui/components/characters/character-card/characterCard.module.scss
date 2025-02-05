@@ -3,10 +3,17 @@
   flex-direction: column;
   height: 245.97px;
   width: 188.57px;
-  background-color: #000000;
+  background: linear-gradient(to bottom, #ec1d24 50%, #000000 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.2s ease-in-out;
   color: #ffffff;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%);
   font-size: 14px;
+
+  &:hover {
+    background-position: top;
+  }
 }
 
 .line {

@@ -1,4 +1,4 @@
-import { Character } from "@/modules/characters/characters";
+import { Character } from "@/modules/characters/domain/character";
 import { CharacterCard } from "../character-card/CharacterCard";
 import style from "./characterGrid.module.scss";
 
