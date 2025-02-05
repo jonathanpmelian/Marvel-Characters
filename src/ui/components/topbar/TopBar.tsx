@@ -8,19 +8,21 @@ export const TopBar = () => {
 
   return (
     <div className={style.container}>
-      <Image
-        src="/marvel.svg"
-        alt="marvel logo"
-        width={130}
-        height={52}
-        priority
-      />
+      <div className={style.container__content}>
+        <Image
+          src="/marvel.svg"
+          alt="marvel logo"
+          width={130}
+          height={52}
+          priority
+        />
 
-      <div className={style["fav-container"]}>
-        <Link href="/" aria-label="link to favorite page">
-          <HeartIcon />
-        </Link>
-        <span className={style["fav-container__counter"]}>{counter}</span>
+        <div className={style["fav-container"]}>
+          <Link href="/" aria-label="link to favorite page">
+            <HeartIcon />
+          </Link>
+          <span className={style["fav-container__counter"]}>{counter}</span>
+        </div>
       </div>
     </div>
   );
