@@ -18,7 +18,10 @@ export const CharacterCard = ({ character }: { character: Character }) => {
 
         <div className={style.textbox}>
           <span className={style.text}>{character.name}</span>
-          <HearthIconOutline />
+
+          <button aria-label="add to favorite" className={style.button}>
+            <HearthIconOutline />
+          </button>
         </div>
       </article>
     </Link>
