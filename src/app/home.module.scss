@@ -1,0 +1,45 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1512px;
+  margin: 0 auto;
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 8px;
+    padding-top: 60px;
+  }
+
+  &__input {
+    height: 19px;
+    border: none;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.resultsText {
+  font-size: 12px;
+}
+
+@media (min-width: 393px) {
+  .searchbar {
+    padding: 0px 48px;
+  }
+}
