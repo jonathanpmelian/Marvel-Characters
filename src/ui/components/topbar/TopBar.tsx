@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "./TopBar.module.css";
+import style from "./TopBar.module.scss";
 import { HeartIcon } from "@/assets/icons/HeartIcon";
 import Link from "next/link";
 
